@@ -39,12 +39,12 @@ body {
 
 .form-control {
   border: 3px solid;
-  border-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB) 1;
+  border-image: linear-gradient(144deg,#802ebb, #4835c4 50%,#01adb9) 1;
   border-radius: 2px;
 }
 
 .form-select {
   border: 3px solid;
-  border-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB) 1;
+  border-image: linear-gradient(144deg,#802ebb, #4835c4 50%,#01adb9) 1;
   border-radius: 2px;
 }
