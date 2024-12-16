@@ -1,62 +1,118 @@
 // Generate prefix of name
 function genPrefix(firstName) {
   if (firstName.length > 4) {
-    return "Ruler";
+    return "Mighty";
   } else {
-    return "Master";
+    return "Fearless";
   }
 }
 
-// Generate First Name of name
+// Generate First Name of name (pirate-themed)
 function genFirstName(firstName) {
   const firstLetter = firstName.charAt(0).toLowerCase();
   if (firstLetter === "a") {
-    return "Jeff";
+    return "Edward";
   } else if (firstLetter === "b") {
-    return "Joe";
+    return "Bartholomew";
   } else if (firstLetter === "c") {
-    return "Chris";
+    return "William";
   } else if (firstLetter === "d") {
-    return "Dana";
+    return "Henry";
+  } else if (firstLetter === "e") {
+    return "Samuel";
+  } else if (firstLetter === "f") {
+    return "Charles";
+  } else if (firstLetter === "g") {
+    return "Calico";
+  } else if (firstLetter === "h") {
+    return "James";
+  } else if (firstLetter === "i") {
+    return "Thomas";
+  } else if (firstLetter === "j") {
+    return "John";
+  } else if (firstLetter === "k") {
+    return "Benjamin";
+  } else if (firstLetter === "l") {
+    return "Robert";
+  } else if (firstLetter === "m") {
+    return "Jack";
+  } else if (firstLetter === "n") {
+    return "Steve";
+  } else if (firstLetter === "o") {
+    return "David";
+  } else if (firstLetter === "p") {
+    return "Francis";
+  } else if (firstLetter === "q") {
+    return "Louis";
+  } else if (firstLetter === "r") {
+    return "Richard";
+  } else if (firstLetter === "s") {
+    return "Nicolas";
+  } else if (firstLetter === "t") {
+    return "Joseph";
+  } else if (firstLetter === "u") {
+    return "George";
+  } else if (firstLetter === "v") {
+    return "Jean";
+  } else if (firstLetter === "w") {
+    return "Thomas";
+  } else if (firstLetter === "x") {
+    return "Nathaiel";
+  } else if (firstLetter === "y") {
+    return "Alexander";
+  } else if (firstLetter === "z") {
+    return "Martin";
   } else {
-    return "Alex"; // Default name if the first letter doesn't match
+    return "Jack"; // Default name
   }
 }
 
 // Generate Middle Name
 function genMiddleName(roadType, favoriteColor) {
   if (roadType === "road") {
-    return `${favoriteColor}ridge`; // IE: Redridge
+    return `${favoriteColor}beard`;
   } else if (roadType === "street") {
-    return `${favoriteColor}son`; // IE: Blueson
-  } else if (roadType === "aveune") {
-    return `${favoriteColor}field`; // IE: Bluefield
+    return `${favoriteColor}heart`;
+  } else if (roadType === "avenue") {
+    return `${favoriteColor}wave`;
   } else {
-    return `${favoriteColor}stone`; // IE: Bluestone
+    return `${favoriteColor}storm`;
   }
 }
 
 // Generate Last Name
 function genLastName(lastName) {
   const lastLetter = lastName.charAt(lastName.length - 1).toLowerCase();
-  if (lastLetter === "a") {
-    return "Shadow";
+  if (lastLetter === "j") {
+    return "First Mate";
+  } else if (lastLetter === "f") {
+    return "Quartermaster";
   } else if (lastLetter === "e") {
-    return "Storm";
-  } else if (lastLetter === "i") {
-    return "Blaze";
-  } else if (lastLetter === "o") {
-    return "Thorn";
-  } else if (lastLetter === "u") {
-    return "Frost";
+    return "Bosun";
+  } else if (lastLetter === "s") {
+    return "Navigator";
+  } else if (lastLetter === "h") {
+    return "Sniper";
+  } else if (lastLetter === "l") {
+    return "Shipwright";
+  } else if (lastLetter === "k") {
+    return "Doctor";
+  } else if (lastLetter === "g") {
+    return "Cook";
+  } else if (lastLetter === "m") {
+    return "Deckhand";
+  } else if (lastLetter === "v") {
+    return "Lookout";
+  } else if (lastLetter === "c") {
+    return "Cabin Boy";
   } else {
-    return "Moon"; // Default last name for letters not matched
+    return "Captain"; // Default name
   }
 }
 
 // Generate Suffix
 function genSuffix(favoriteAnimal) {
-  return `of the ${favoriteAnimal}`;
+  return `of the ${favoriteAnimal} Pirates`;
 }
 
 // Master Function to Assemble Full Name
