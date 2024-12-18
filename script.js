@@ -69,14 +69,30 @@ function genFirstName(firstName) {
 
 // Generate Middle Name
 function genMiddleName(roadType, favoriteColor) {
-  if (roadType === "road") {
-    return `${favoriteColor}beard`;
-  } else if (roadType === "street") {
-    return `${favoriteColor}heart`;
-  } else if (roadType === "avenue") {
-    return `${favoriteColor}wave`;
+  let secondWord = favoriteColor.split(" ");
+  if (secondWord[1] == "") {
+    secondWord = favoriteColor;
   } else {
-    return `${favoriteColor}storm`;
+    secondWord = secondWord[1];
+  }
+  if (roadType === "road") {
+    return `${secondWord}stone`;
+  } else if (roadType === "street") {
+    return `${secondWord}beard`;
+  } else if (roadType === "avenue") {
+    return `${secondWord}sails`;
+  } else if (roadType === "court") {
+    return `${secondWord}wave`;
+  } else if (roadType === "road" && favoriteColor.length > 8) {
+    return `${secondWord}heart`;
+  } else if (roadType === "street" && favoriteColor.length > 8) {
+    return `${secondWord}cove`;
+  } else if (roadType === "avuene" && favoriteColor.length > 8) {
+    return `${secondWord}storm`;
+  } else if (roadType === "court" && favoriteColor.length > 8) {
+    return `${secondWord}hunter`;
+  } else {
+    return `${secondWord}raven`;
   }
 }
 
