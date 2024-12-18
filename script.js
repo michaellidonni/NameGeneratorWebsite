@@ -35,7 +35,7 @@ function genFirstName(firstName) {
   } else if (firstLetter === "l") {
     return "Robert";
   } else if (firstLetter === "m") {
-    return "Jack";
+    return "Marshall";
   } else if (firstLetter === "n") {
     return "Steve";
   } else if (firstLetter === "o") {
@@ -63,7 +63,7 @@ function genFirstName(firstName) {
   } else if (firstLetter === "z") {
     return "Martin";
   } else {
-    return "Jack"; // Default name
+    return "Jack"; // Default
   }
 }
 
@@ -75,24 +75,24 @@ function genMiddleName(roadType, favoriteColor) {
   } else {
     secondWord = secondWord[1];
   }
-  if (roadType === "road") {
-    return `${secondWord}stone`;
-  } else if (roadType === "street") {
-    return `${secondWord}beard`;
-  } else if (roadType === "avenue") {
-    return `${secondWord}sails`;
-  } else if (roadType === "court") {
-    return `${secondWord}wave`;
-  } else if (roadType === "road" && favoriteColor.length > 8) {
+  if (roadType === "road" && favoriteColor.length < 7) {
+    return `${favoriteColor}stone`;
+  } else if (roadType === "street" && favoriteColor.length < 7) {
+    return `${favoriteColor}beard`;
+  } else if (roadType === "avenue" && favoriteColor.length < 7) {
+    return `${favoriteColor}sails`;
+  } else if (roadType === "court" && favoriteColor.length < 7) {
+    return `${favoriteColor}wave`;
+  } else if (roadType === "road" && favoriteColor.length > 7) {
     return `${secondWord}heart`;
-  } else if (roadType === "street" && favoriteColor.length > 8) {
+  } else if (roadType === "street" && favoriteColor.length > 7) {
     return `${secondWord}cove`;
-  } else if (roadType === "avuene" && favoriteColor.length > 8) {
+  } else if (roadType === "avuene" && favoriteColor.length > 7) {
     return `${secondWord}storm`;
-  } else if (roadType === "court" && favoriteColor.length > 8) {
+  } else if (roadType === "court" && favoriteColor.length > 7) {
     return `${secondWord}hunter`;
   } else {
-    return `${secondWord}raven`;
+    return `${favoriteColor}raven`; //Default
   }
 }
 
@@ -122,7 +122,7 @@ function genLastName(lastName) {
   } else if (lastLetter === "c") {
     return "Cabin Boy";
   } else {
-    return "Captain"; // Default name
+    return "Captain"; // Default
   }
 }
 
