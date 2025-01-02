@@ -64,3 +64,8 @@ body {
 .btn-close {
   background-color: rgb(255, 255, 255);
 }
+
+.modal-dialog {
+  max-width: 600px; /* Adjust this value as needed */
+  margin: auto; /* Center the modal */
+}
