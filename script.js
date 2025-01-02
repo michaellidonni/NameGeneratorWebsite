@@ -128,32 +128,34 @@ function genMiddleName(roadType, favoriteColor) {
 // Generate Last Name
 function genLastName(lastName) {
   const lastLetter = lastName.charAt(lastName.length - 1).toLowerCase();
-  if (lastLetter === "j") {
-    return "First Mate";
-  } else if (lastLetter === "f") {
+
+  if (lastLetter === "j" || lastLetter === "n") {
+    return "Vice-Captain";
+  } else if (lastLetter === "f" || lastLetter === "p") {
     return "Quartermaster";
-  } else if (lastLetter === "e") {
+  } else if (lastLetter === "e" || lastLetter === "t") {
     return "Bosun";
-  } else if (lastLetter === "s") {
+  } else if (lastLetter === "s" || lastLetter === "r") {
     return "Navigator";
-  } else if (lastLetter === "h") {
+  } else if (lastLetter === "h" || lastLetter === "x") {
     return "Sniper";
-  } else if (lastLetter === "l") {
+  } else if (lastLetter === "l" || lastLetter === "y") {
     return "Shipwright";
-  } else if (lastLetter === "k") {
+  } else if (lastLetter === "k" || lastLetter === "w") {
     return "Doctor";
-  } else if (lastLetter === "g") {
+  } else if (lastLetter === "g" || lastLetter === "o") {
     return "Cook";
-  } else if (lastLetter === "m") {
+  } else if (lastLetter === "m" || lastLetter === "b") {
     return "Deckhand";
-  } else if (lastLetter === "v") {
+  } else if (lastLetter === "v" || lastLetter === "u") {
     return "Lookout";
-  } else if (lastLetter === "c") {
+  } else if (lastLetter === "c" || lastLetter === "z") {
     return "Cabin Boy";
   } else {
     return "Captain"; // Default
   }
 }
+
 
 // Generate Suffix
 function genSuffix(favoriteAnimal) {
