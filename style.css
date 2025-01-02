@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2e2e2e 100%);
     color: white;
 }
 
@@ -47,4 +47,20 @@ body {
   border: 3px solid;
   border-image: linear-gradient(144deg,#802ebb, #4835c4 50%,#01adb9) 1;
   border-radius: 2px;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 5rem;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+} 
+
+.modal-content {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2e2e2e 100%);  
+}
+
+.btn-close {
+  background-color: rgb(255, 255, 255);
 }

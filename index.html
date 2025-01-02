@@ -31,66 +31,99 @@
           <p>Fill out the form below to generate your pirate name!</p>
         </div>
         <!-- Information input form -->
-        <form id="fantasyForm" class="mb-4">
-          <!-- First Name Input -->
-          <div class="mb-3">
-            <label for="firstName" class="form-label">First Name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="firstName"
-              placeholder="Enter your first name"
-            />
-          </div>
-          <!-- Last Name Input-->
-          <div class="mb-3">
-            <label for="lastName" class="form-label">Last Name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="lastName"
-              placeholder="Enter your last name"
-            />
-          </div>
-          <!-- Get Road Type -->
-          <div class="mb-3">
-            <label for="roadType" class="form-label">Choose Road Type</label>
-            <select id="roadType" class="form-select">
-              <option value="road">Road</option>
-              <option value="street">Street</option>
-              <option value="avenue">Avenue</option>
-              <option value="court">Court</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <!-- Favorite Color -->
-          <div class="mb-3">
-            <label for="favoriteColor" class="form-label">Favorite Color</label>
-            <input
-              type="text"
-              class="form-control"
-              id="favoriteColor"
-              placeholder="Enter your favorite color"
-            />
-          </div>
-          <!-- FavoriteAnimal -->
-          <div class="mb-3">
-            <label for="favoriteAnimal" class="form-label"
-              >Favorite Animal</label
+        <div class="box">
+          <form id="fantasyForm" class="mb-4">
+            <!-- First Name Input -->
+            <div class="mb-3">
+              <label for="firstName" class="form-label">First Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                placeholder="Enter your first name"
+              />
+            </div>
+            <!-- Last Name Input-->
+            <div class="mb-3">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                placeholder="Enter your last name"
+              />
+            </div>
+            <!-- Get Road Type -->
+            <div class="mb-3">
+              <label for="roadType" class="form-label">Choose Road Type</label>
+              <select id="roadType" class="form-select">
+                <option value="road">Road</option>
+                <option value="street">Street</option>
+                <option value="avenue">Avenue</option>
+                <option value="court">Court</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <!-- Favorite Color -->
+            <div class="mb-3">
+              <label for="favoriteColor" class="form-label"
+                >Favorite Color</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="favoriteColor"
+                placeholder="Enter your favorite color"
+              />
+            </div>
+            <!-- FavoriteAnimal -->
+            <div class="mb-3">
+              <label for="favoriteAnimal" class="form-label"
+                >Favorite Animal</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="favoriteAnimal"
+                placeholder="Enter your favorite animal"
+              />
+            </div>
+            <!-- Button -->
+            <div
+              class="btn button-63 w-100 mt-4"
+              onclick="genFullName()"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
             >
-            <input
-              type="text"
-              class="form-control"
-              id="favoriteAnimal"
-              placeholder="Enter your favorite animal"
-            />
+              Generate Name
+            </div>
+          </form>
+        </div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  <div id="result"></div>
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">...</div>
+            </div>
           </div>
-          <!-- Button -->
-          <div class="btn button-63 w-100 mt-4" onclick="genFullName()">
-            Generate Name
-          </div>
-        </form>
-        <div id="result"></div>
+        </div>
       </div>
     </main>
     <footer>
